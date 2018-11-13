@@ -1,0 +1,12 @@
+<h1 class='text-center'>Edit Tile</h1>
+
+<div class="tile-wrapper form-preview">
+  <%= render 'show_tile' %>
+</div>
+
+<%= render 'form' %>
+
+<div class="form-footer text-center">
+  <%= link_to 'Return', tile_path(@tile) %>
+  <%= link_to 'Delete', tile_path(@tile), method: :delete %>
+</div>

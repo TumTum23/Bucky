@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Body Styles
+body {
+  position: relative;
+  background-color: #fafafa;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.alert {
+  margin-top: 5px;
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.alert-notice, .alert-alert {
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+  border-radius: 4px;
+  color: #31708f;
+}
+
+.simple_form {
+  position: relative;
+  .alert {
+    margin-top: -90px;
+  }
+}
+
+
+.footer {
+  margin-top: -15px;
+}
+
+.form-footer {
+  margin-top: 45px;
+}
+
+.footer, .form-footer {
+  padding-bottom: 100px;
+  a {
+    margin: 0 15px;
+    &:hover {
+      text-decoration: none;
+      opacity: 70%;
+    }
+  }
+}
+
+// Navbar Styles
+.navbar {
+  height: 76px;
+  border: 0;
+  border-bottom: 1px solid #dbdbdb;
+  border-radius: 0;
+  background-color: white;
+  .container {
+    max-width: 1010px;
+  }
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Leckerli One';
+  font-size: 2.25em;
+  margin-top: 8px;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: #003569;
+  &:hover {
+    color: #003569;
+    opacity: 0.70;
+  }
+}
+
+.collapse, .navbar-collapse {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 12px;
+}
+
+.navbar-toggle {
+  margin-top: 21px;
+}
+
+// Tile Styles
+.tile-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 602px;
+  padding-top: 60px;
+  margin-top: 76px;
+}
+
+.tile {
+  width: 100%;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  margin-bottom: 60px;
+}
+
+.tile-header, .tile-footer {
+  color: #262626;
+  background-color: white;
+  font-weight: 700;
+}
+
+.tile-header {
+  padding: 14px 20px;
+}
+
+.tile-picture {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.tile-footer {
+  padding: 20px 24px;
+}
+
+.tile-description {
+
+}
+
+// Form Styles
+.form-wrapper {
+  background-color: white;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+.form-preview {
+  margin-top: -60px;
+}

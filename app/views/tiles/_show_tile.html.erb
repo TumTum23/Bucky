@@ -1,0 +1,18 @@
+<div class="tile">
+  <div class="tile-header">
+    <%= @tile.user.user_name %>
+  </div>
+  <div class="tile-picture">
+    <% if @tile.picture.file? %>
+      <%= image_tag @tile.picture.url(:medium) %>
+    <% else %>
+      Oops! Heroku doesn't allow saving images to their file system.
+      Please wait while the owner implements external file storage.
+    <% end %>
+  </div>
+  <div class="tile-footer">
+    <div class="tile-description">
+      <%= @tile.description %>
+    </div>
+  </div>
+</div>
