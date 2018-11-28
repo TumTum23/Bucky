@@ -8,7 +8,7 @@
         <% if tile.picture.file? %>
           <%= link_to (image_tag tile.picture.url(:medium)), tile_path(tile) %>
         <% else %>
-          Oops! Heroku doesn't allow saving images to their file system.
+          Oops!!! Heroku doesn't allow saving images to their file system.
           Please wait while the owner implements external file storage.
         <% end %>
       </div>
