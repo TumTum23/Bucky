@@ -4,6 +4,8 @@ RailsAdmin.config do |config|
   # or something more dynamic
   config.main_app_name = Proc.new { |controller| [ "Bucky", "Admin Area - #{controller.params[:action].try(:titleize)}" ] }
 
+
+
   ### Popular gems integration
 
   ## == Devise ==
