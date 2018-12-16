@@ -4,7 +4,7 @@
 
 
 <div class="footer text-center">
-  <%= link_to 'Go Back', tiles_path %>
+  <%= link_to 'Return', tiles_path %>
   <% if @tile.user.id == current_user.id %>
     <%= link_to 'Edit', edit_tile_path %>
   <% end %>
